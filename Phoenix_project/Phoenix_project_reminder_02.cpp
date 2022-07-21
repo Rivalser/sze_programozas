@@ -1,14 +1,14 @@
 
 /*
-Írjon egy programot, amely 2 db felhasználói függvényt használ.
+Ãrjon egy programot, amely 2 db felhasznÃ¡lÃ³i fÃ¼ggvÃ©nyt hasznÃ¡l.
 
-Az egyik az int feltolt(char s_tb[]), amely feltölt egy karakter tömböt (1. paraméter) ékezet nélküli szöveggel az ENTER billentyû leütéséig,
-vagy maximum 50 db karakterig. Bekérési információk és hibaüzenetek kiírása nem kell! A tömb hosszát szimbolikus állandóval állítsa be.
-A függvény visszatérési értéke a feltöltött tömb hossza legyen.
+Az egyik az int feltolt(char s_tb[]), amely feltÃ¶lt egy karakter tÃ¶mbÃ¶t (1. paramÃ©ter) Ã©kezet nÃ©lkÃ¼li szÃ¶veggel az ENTER billentyÅ± leÃ¼tÃ©sÃ©ig,
+vagy maximum 50 db karakterig. BekÃ©rÃ©si informÃ¡ciÃ³k Ã©s hibaÃ¼zenetek kiÃ­rÃ¡sa nem kell! A tÃ¶mb hosszÃ¡t szimbolikus Ã¡llandÃ³val Ã¡llÃ­tsa be.
+A fÃ¼ggvÃ©ny visszatÃ©rÃ©si Ã©rtÃ©ke a feltÃ¶ltÃ¶tt tÃ¶mb hossza legyen.
 
-A másik függvény a void torol(char s_tb[], int h), pedig a feltöltött tömb (1. paraméter) minden második elemét törölje,
-majd az így módosított tömb tartalmát írja is ki.
-A torol függvény 2. paramétere a feltolt függvény visszatérési értéke.
+A mÃ¡sik fÃ¼ggvÃ©ny a void torol(char s_tb[], int h), pedig a feltÃ¶ltÃ¶tt tÃ¶mb (1. paramÃ©ter) minden mÃ¡sodik elemÃ©t tÃ¶rÃ¶lje,
+majd az Ã­gy mÃ³dosÃ­tott tÃ¶mb tartalmÃ¡t Ã­rja is ki.
+A torol fÃ¼ggvÃ©ny 2. paramÃ©tere a feltolt fÃ¼ggvÃ©ny visszatÃ©rÃ©si Ã©rtÃ©ke.
 */
 
 #include <iostream>
@@ -20,7 +20,7 @@ using namespace std;
 int feltolt(char s_tb[]) {
 
 	char aktChar;
-	cin.getline(s_tb, MAX);
+	cin.getline(s_tb, MAX); // a karakterek cserÃ©lÃ©sekor a fehÃ©rkaraktereket bÃ©kÃ©n hagyja Ã­gy a space nem zavar bele
 
 	int i = 0;
 	while (s_tb[i] != '\0')
