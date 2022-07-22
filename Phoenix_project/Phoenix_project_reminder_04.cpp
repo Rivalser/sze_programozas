@@ -35,6 +35,12 @@ double area(string fbe) {
 			i++;
 		}
 
+		delete[]a_oldal;
+		delete[]b_oldal;
+		delete[]szog;
+		delete[]terulet;
+		a_oldal, b_oldal, szog, terulet = NULL;
+		
 		return sum / N;
 
 	}
