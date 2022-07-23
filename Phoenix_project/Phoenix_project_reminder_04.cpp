@@ -27,7 +27,7 @@ double area(string fbe) {
 			file >> a_oldal[i];
 			file >> b_oldal[i];
 			file >> szog[i];
-			terulet[i] = (a_oldal[i] * b_oldal[i] * sin(szog[i])) / 2;
+			terulet[i] = (a_oldal[i] * b_oldal[i] * sin(szog[i] * 3.14 / 180)) / 2; //* 3.14 / 180 szögbe váltás
 			sum += terulet[i];
 			if (terulet[i] >= MIN && terulet[i] <= MAX) {
 				cout << terulet[i] << " [nm]" << endl;
