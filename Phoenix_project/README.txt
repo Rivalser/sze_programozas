@@ -1,3 +1,5 @@
+FONTOS: Ez még nem a teljesen jó megoldás, hiszen egy kiskaput kijátszva az oszlopok száma fix. Fejlesztett verzió hamarosan! @Rick
+
 5. feladat
 Írjon egy string first_last(string fbe, string fki) függvényt, amely kiírja az alábbi átalakításon átesett szerzők neveit a képernyőre és egy kimeneti file-ba (2. paraméter).
 
