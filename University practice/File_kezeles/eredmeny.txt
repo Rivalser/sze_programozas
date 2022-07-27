@@ -1,0 +1,10 @@
+A targyat felvett hallgatok szama: 110
+Az egyesek szama: 1
+Az kettesek szama: 32
+Az harmasok szama: 40
+Az negyesek szama: 21
+Az otosok szama: 8
+A meg nem jelenok szama: 3
+Az alairast nem szerzettek szama: 5
+A bukottak szama: 9
+A jegyek átlaga (a "bukottak" számával számolva ) : 2.88182
