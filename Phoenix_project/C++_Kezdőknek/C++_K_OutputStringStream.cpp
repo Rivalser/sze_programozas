@@ -1,0 +1,67 @@
+#include <iostream>
+#include <sstream>
+#include <vector>
+#include <string>
+
+//Ezzel tudunk konvertálni egyes változók és a stringek között
+
+using namespace std;
+
+void beker(string& str);
+
+void szetszed(vector<int>& v, string str);
+
+void visszatesz(vector<int> v, string &str);
+
+void beker(string& str) {
+
+	cout << "Adj meg egy szamsort!" << endl;
+	getline(cin, str);
+
+}
+
+void szetszed(vector<int>& v, string str) {
+
+	//input string stream
+	istringstream szamok(str); // Az str-bõl csináltunk szamok nevû adatfolyamot (11 32 467 1 14 621 9 57 ...)
+
+	int szam;
+
+	while (szamok >> szam) // A szamok adatfolyamból a szam-ba töltjük bele az elemeket egyesével
+	{
+		if (szam > 0)
+			v.push_back(szam);
+
+	}
+
+}
+
+void visszatesz(vector<int> v, string &str) {
+
+	ostringstream vissza(str); //output string stream
+
+	for (int i = 0; i < v.size(); i++)
+	{
+		vissza << v[i] << " ";
+	}
+	str = vissza.str();
+	str.erase(str.size() - 1, 1); //Szóköz törlése
+}
+
+
+int main()
+{
+
+	string str;
+	vector<int> v;
+	beker(str);
+	szetszed(v, str);
+	str.clear();
+	visszatesz(v, str);
+	/*for (int i = 0; i < v.size(); i++)
+	{
+		cout << "A vektor " << i + 1 << ". eleme: " << v[i] << endl;
+	}*/
+	cout << str << endl;
+
+}
