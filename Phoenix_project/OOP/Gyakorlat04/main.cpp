@@ -1,7 +1,7 @@
 #include "minta.h"
 
 int main() {
-	//személy,úszás,bringa,futás,depo_ido,idojovairas
+	//szemÃ©ly,ÃºszÃ¡s,bringa,futÃ¡s,depo_ido,idojovairas
 	//ora perc konst
 	tri_race alap;
 	tri_race A_tri("A", 1200, 4200, 2300, 123, 60);
@@ -12,7 +12,7 @@ int main() {
 	A_tri.kiir_rajt().setSum(A_tri.getIj()).kiir_cel();
 	B_tri.kiir_rajt().setSum(B_tri.getIj()).kiir_cel();
 	C_tri.kiir_rajt().setSum(C_tri.getIj()).kiir_cel();
-	std::cout<<"/n" << std::endl;
+	std::cout<<"\n" << std::endl;
 
 	return 0;
 }
